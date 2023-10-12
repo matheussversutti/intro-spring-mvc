@@ -7,6 +7,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Lista de Ususarios</title>
+    <spring:url var="css" value="/static/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="${css }"/>
     
 </head>
 <body>
@@ -20,7 +22,7 @@
     </div>
     <hr>
 
-    
+    	<div class="${message == null ? 'panel-default' : 'panel-success'}">
 
         <div class="panel-heading">
             <span>${message == null ? '&nbsp;' : message}</span>
@@ -58,7 +60,7 @@
             </tbody>
         </table>
     </div>
-    
+    <hr>
     
 
 </body>
